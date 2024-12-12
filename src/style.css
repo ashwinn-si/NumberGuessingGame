@@ -1,0 +1,113 @@
+:root {
+    --primary-bg: #A59D84;
+    --secondary-bg: #C1BAA1;
+    --text-color: #ECEBDE;
+    --to-high-color:red;
+    --to-low-color: #ff5e23;
+    --correct-color: green;
+    --header-font: black;
+
+    --small-font: 1.2rem;
+    --small-mid-middle-font:1.4rem;
+    --mid-font:1.8rem;
+    --large-font : 3.2rem;
+    --input-size:1.3rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Coming Soon';
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container{
+    min-width: 300px;
+    max-width: 500px;
+    padding: 10px;
+    background-color: var(--secondary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+}
+.header-container{
+    position: absolute;
+    top: 5%;
+
+}
+.header{
+    font-size: var(--large-font);
+    color: var(--text-color);
+    padding: 10px;
+    font-weight: 550;
+    text-wrap: wrap;
+    text-align: center;
+}
+.main-container p{
+    text-transform: capitalize;
+    font-size: var(--mid-font);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-wrap: wrap;
+}
+.text_displayer{
+    font-weight: bold;
+    font-size:var(--mid-font);
+}
+input {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    border: 2px solid var(--secondary-bg);
+    border-radius: 8px;
+    padding: 5px 15px;
+    width: 60%;
+    font-size: var(--mid-font);
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    font-family: "New Amsterdam";
+}
+
+input::placeholder {
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+input:focus {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    border-color: var(--text-color);
+}
+.result{
+    text-align: center;
+    text-wrap: wrap;
+    font-size: var(--small-mid-middle-font);
+}
+.result p{
+    font-size: var(--mid-font);
+    font-family: 'New Amsterdam';
+    font-weight: 700;
+}
+
+.higher{
+    color: var(--to-high-color);
+}
+.lower{
+    color: var(--to-low-color);
+}
+.correct{
+    color:lightgreen;
+}
